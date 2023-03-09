@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./iconfont/iconfont.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .box {
+        float: left;
+        position: relative;
+        width: 350px;
+        height: 247px;
+        margin: 20px;
+        line-height: 1.5;
+        overflow: hidden;
+      }
+
+      .box:hover .title {
+        bottom: 0;
+      }
+
+      .box .title {
+        position: absolute;
+        left: 0;
+        bottom: -50px;
+        color: #fff;
+        padding: 20px;
+        z-index: 3;
+        transition: 0.6s;
+      }
+
+      .box h5 {
+        font-weight: 400;
+      }
+
+      .box .title p {
+        margin-top: 30px;
+      }
+
+      .box .iconfont {
+        vertical-align: middle;
+        color: #f00;
+        font-weight: 700;
+      }
+
+      .box::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+        opacity: 0;
+        transition: 0.5s;
+      }
+
+      .box:hover::after {
+        opacity: 1;
+      }
+
+      .box img {
+        transition: 0.6s;
+      }
+
+      .box:hover img {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="#" class="box">
+      <img src="./images/pic1.png" alt="" />
+      <div class="title">
+        <h5>行业洞察</h5>
+        <h4>迈向智能世界2030</h4>
+        <p>了解更多<i class="iconfont icon-arrow-right"></i></p>
+      </div>
+    </a>
+
+    <a href="#" class="box">
+      <img src="./images/pic2.png" alt="" />
+      <div class="title">
+        <h5>产品</h5>
+        <h4>OceanStor Pacific海量存储斩获2021 Interop金奖</h4>
+        <p>了解更多<i class="iconfont icon-arrow-right"></i></p>
+      </div>
+    </a>
+
+    <a href="#" class="box">
+      <img src="./images/pic3.png" alt="" />
+      <div class="title">
+        <h5>《ICT新视界》刊首语</h5>
+        <h4>笃行致远，共建具有获得感、幸福感、安全感的智慧城市</h4>
+        <p>了解更多<i class="iconfont icon-arrow-right"></i></p>
+      </div>
+    </a>
+  </body>
+</html>
